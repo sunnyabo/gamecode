@@ -1,0 +1,561 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0048)http://download.hongzhongmajiang.com/hongzhong2/ -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+ 
+<META http-equiv="Content-Type" content="text/html; charset=gb2312"> 
+<META name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+<TITLE>修水麻将</TITLE> 
+<META name="keywords" content=""> 
+<META name="description" content=""> <LINK href="image/basic.css" rel="stylesheet" 
+type="text/css"> <LINK href="image/idangerous.swiper.css" rel="stylesheet"> 
+<SCRIPT src="image/jquery.min.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="image/idangerous.swiper-2.1.min.js"></SCRIPT>
+ 
+<META name="GENERATOR" content="MSHTML 11.00.9600.18450"></HEAD>
+<BODY>
+<DIV style="display: none;"> <IMG src="image/biaoti.png"> </DIV>         
+<META name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0"> 
+    
+<STYLE type="text/css">
+        #weixin-tip {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            filter: alpha(opacity=0.7);
+			opacity:0.9;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
+
+        #weixin-tip p {
+            text-align: center;
+            margin: 0;
+            height: 100%;
+            position: relative;
+        }
+
+        #weixin-tip p img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #weixin-tip .close {
+            color: #fff;
+            padding: 5px;
+            font: bold 24px/26px simsun;
+            text-shadow: 0 1px 0 #ddd;
+            position: absolute;
+            top: 0;
+            left: 5px;
+        }
+
+		#ios-weixin-tip {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.8);
+            filter: alpha(opacity=0.7);
+			opacity:0.9;
+            width: 100%;
+            height: 100%;
+            z-index: 100;
+        }
+
+        #ios-weixin-tip p {
+            text-align: center;
+            margin: 0;
+            height: 100%;
+            position: relative;
+        }
+
+        #ios-weixin-tip p img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #ios-weixin-tip .close {
+            color: #fff;
+            padding: 5px;
+            font: bold 24px/26px simsun;
+            text-shadow: 0 1px 0 #ddd;
+            position: absolute;
+            top: 0;
+            left: 5px;
+        }
+
+        .hide {
+            display: none;
+        }
+
+        /* 提示框*/
+        .confirmBox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding-top: 45%;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            background: rgba(0, 0, 0, 0.4);
+            width: 100%;
+            height: 500px;
+            visibility: hidden;
+        }
+
+        .confirmBox .row1 {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+        .confirmBox .row2 {
+            position: relative;
+            width: 290px;
+        }
+
+        .confirmBox .row2 .info {
+            width: 100%;
+            background-color: rgba(253, 253, 253, 0.95);
+            display: inline-block;
+            border-radius: .3em;
+        }
+
+        .confirmBox .row2 .info h2 {
+            padding-top: 1em;
+            margin-bottom: 10px;
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        .confirmBox .row2 .info .con {
+            padding: 0 1em 1em 1em;
+            text-align: center;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .confirmBox .row2 .info .btn-box {
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-pack: justify;
+            border-top: 1px #ECECEE solid;
+        }
+
+        .confirmBox .row2 .info .btn-box .btn-confirm {
+            -webkit-box-flex: 1;
+            padding: 14px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #0080FA;
+        }
+
+        .confirmBox .row2 .info .btn-box .btn-cancel {
+            -webkit-box-flex: 1;
+            padding: 14px 0;
+            text-align: center;
+            font-size: 16px;
+            color: #0080FA;
+            border-right: 1px #ECECEE solid;
+        }
+
+        .confirmBox .row3 {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
+            flex: 1;
+        }
+
+
+        @media only screen
+        and (min-device-width: 240px)
+        and (max-device-width: 700px)
+        and (orientation: landscape) {
+            /*iphone landscape */
+            .confirmBox {
+                padding-top: 20% !important;
+            }
+
+        }
+
+        /*滚动浮层*/
+        .overlay {
+            width: 100%;
+            position: fixed;
+            bottom: -900px;
+            left: 0px;
+            z-index: 11;
+        }
+
+        .overlay .header {
+            background-color: #F3F3F3;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            font-size: 14px;
+            color: #666666;
+            font-weight: bold;
+        }
+
+        .overlay .header a {
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+
+        .overlay .content {
+            padding: 10px;
+            background-color: #fff;
+        }
+
+        .overlay .content .tit {
+            margin-top: 0;
+            font-size: 12px;
+            color: #666666;
+            margin-bottom: 10px;
+        }
+
+        .overlay .btn-list {
+            position: relative;
+        }
+
+        .overlay .content #jc {
+            text-decoration: underline;
+            color: #ee272f;
+            font-size: 12px;
+            line-height: 26px;
+            position: absolute;
+            bottom: 0;
+            right: 10px;
+        }
+
+        .overlay .content #btn-trust {
+            display: block;
+            margin: 30px auto 10px auto;
+            color: #00A0EC;
+            font-size: 14px;
+            border-radius: 3em;
+            padding: 5px;
+            width: 40%;
+            text-align: center;
+            border: 1px solid #00A0EC;
+            line-height: 26px;
+        }
+
+        .overlay .content .step1 {
+            display: block;
+            width: 80%;
+            margin: 0 auto 20px auto;
+        }
+
+        .overlay .content .sign {
+            text-decoration: none;
+            border: 1px solid #dddddd;
+            border-radius: .3em;
+            padding: 7px 10px;
+            display: -webkit-box;
+            -webkit-box-orient: horizontal;
+            -webkit-box-pack: justify;
+            -webkit-box-align: center;
+            margin: 0 auto;
+        }
+
+        .overlay .sign img {
+            display: block;
+            width: 40px;
+            height: 41px;
+            margin-right: 10px;
+        }
+
+        .overlay .sign p {
+            font-size: 14px;
+            color: #B5B5BB;
+
+        }
+
+        .overlay .sign p.sign-name {
+            width: 80%;
+            overflow: hidden;
+            color: #000;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+        .overlay .finger {
+            display: block;
+            width: 24px;
+            position: relative;
+            top: -15px;
+            float: right;
+            right: 0;
+            z-index: 12;
+        }
+
+        a {
+            color: #8a8a8a;
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+    </STYLE>
+     
+<SCRIPT src="image/zepto.min.js" type="text/javascript"></SCRIPT>
+     
+<STYLE type="text/css"></STYLE>
+     
+<SCRIPT type="text/javascript">
+        var is_weixin = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function doLocation(url) {
+            var a = document.createElement("a");
+            if (!a.click) {
+                window.location = url;
+                return;
+            }
+            a.setAttribute("href", url);
+            a.style.display = "none";
+            document.body.appendChild(a);
+            a.click();
+        }
+        function downandroid() {
+            if (is_weixin()) {
+                var winHeight = typeof window.innerHeight != "undefined" ? window.innerHeight : document.documentElement.clientHeight;
+                //兼容IOS，不需要的可以去掉
+                var tip = document.getElementById("weixin-tip");
+                var close = document.getElementById("close");
+                tip.style.height = winHeight + "px";
+                //兼容IOS弹窗整屏
+                tip.style.display = "block";
+                close.onclick = function () {
+                    tip.style.display = "none";
+                }
+            } else {
+                window.location.href = "./jump.php";
+                return;
+                doLocation("./jump.php");
+            }
+        }
+
+        function downios() {
+            if (is_weixin()) {
+                var winHeight = typeof window.innerHeight != "undefined" ? window.innerHeight : document.documentElement.clientHeight;
+                //兼容IOS，不需要的可以去掉
+                var tip = document.getElementById("ios-weixin-tip");
+                var close = document.getElementById("ios-close");
+                tip.style.height = winHeight + "px";
+                //兼容IOS弹窗整屏
+                tip.style.display = "block";
+                close.onclick = function () {
+                    tip.style.display = "none";
+                }
+            } else {
+                window.location.href = "./step.html";
+                return;
+                doLocation("./step.html");
+            }
+        }
+    </SCRIPT>
+ 
+<DIV id="main" style="margin: auto; overflow: hidden; min-width: 300px !important; max-width: 730px !important;"><!--<div><img class="top" src="./image/logo.gif" /></div>
+  <script>
+
+$(function (){
+	var mySwiper = new Swiper('.swiper-container',{
+	  loop:true,
+	  grabCursor: true,
+	  paginationClickable: true,
+	  pagination: '.pagination'
+	});
+	var resize = function(e) {
+		var query = $('.swiper-container');
+		var clientW = query[0].clientWidth;
+		query.css('height', clientW*320/730+'px');
+	}
+	$(window).bind('resize', resize);
+	resize();
+	setInterval(function(){
+		mySwiper.swipeNext();
+	}, 5000);
+});
+
+</script>	
+<img class="logo" src="./image/logo.jpg" />	
+		
+<div class="swiper-wrapper">
+  <div class="swiper-slide">
+    <div class="content-slide"></div>
+  </div>
+  <div class="swiper-slide">
+    <div class="content-slide"></div>
+  </div>
+  <div class="swiper-slide">
+    <div class="content-slide"></div>
+  </div>
+</div>	 --> 
+<DIV class="swiper-wrapper">
+<DIV class="swiper-slide">
+<DIV><IMG class="top" src="image/tt.jpg"></DIV></DIV><!-- <div class="swiper-slide">
+		    <div><img class="top" src="./image/top1.jpg" /></div>
+	      </div>
+</div>
+		<div class="swiper-container">
+		  <div class="pagination"></div> --> 
+</DIV>
+<P 
+style="padding-top: 12px; font-family: 微软雅黑; font-size: 14px;">微信不允许直接下载文件，请点击右上角分享按钮，选择在浏览器中打开, 
+或者复制链接到浏览器。 </P>
+<SCRIPT>
+			
+			var tabsSwiper = new Swiper('.swiper-container2',{
+			speed:500,
+			onSlideChangeStart: function(){
+			  $(".tabs .active").removeClass('active');
+			  $(".tabs a").eq(tabsSwiper.activeIndex).addClass('active');
+			}
+		  });
+		  
+	    </SCRIPT>
+             
+<TABLE width="100%" cellspace="0">
+  <TBODY>
+  <TR align="center">
+    <TD></TD></TR>
+  <TR align="center">
+    <TD></TD></TR>
+  <TR>
+    <TD>
+      <DIV class="swiper-container4">
+      <DIV class="swiper-wrapper">
+      <DIV class="swiper-slide red-slide">
+      <DIV class="li"><IMG class="doc" src="image/android.jpg"><IMG 
+      class="doc" onClick="downandroid();" 
+src="image/anbutton.png"></DIV>
+      <DIV class="li odd"><IMG class="doc" src="image/ios.jpg"><IMG 
+      class="doc" onClick="downios();" 
+      src="image/iosbutton.png"></DIV></DIV></DIV></DIV></TD></TR>
+  <TR></TR>
+  <TR>
+    <TD align="center"><BR></TD></TR></TBODY></TABLE>
+<DIV id="weixin-tip">
+<P><IMG alt="微信扫描打开APP下载链接提示代码优化" src="image/android.png">         <SPAN 
+title="关闭" class="close" id="close">×</SPAN>   </P></DIV>
+<DIV id="ios-weixin-tip">
+<P><IMG alt="微信扫描打开APP下载链接提示代码优化" src="image/ios.png">         <SPAN 
+title="关闭" class="close" id="ios-close">×</SPAN>     </P></DIV><SECTION class="confirmBox">
+<DIV class="row1"></DIV>
+<DIV class="row2">
+<DIV class="info">
+<H2>提示未受信任企业级开发者?</H2>
+<DIV 
+class="con">iOS9系统的限制，首次打开前需要进入【设置&gt;&gt;通用&gt;&gt;描述文件】，找到对应的开发者证书，选择【信任】即可打开  
+           </DIV>
+<DIV class="btn-box">
+<DIV class="btn-cancel">                    关闭                 </DIV>
+<DIV class="btn-confirm">                    详细教程                 
+</DIV></DIV></DIV></DIV>
+<DIV class="row3"></DIV></SECTION> <SECTION class="overlay">
+<DIV class="header">安装提示<A id="btn-cancel" 
+href="javascript:void(0);">×</A></DIV>
+<DIV class="content">
+<P class="tit">&nbsp;&nbsp;安装完成后，首次打开APP需要信任下方的描述文件</P><A class="sign" href="https://www.imaibei.com/download/imaibei.mobileprovision"><IMG 
+src="image/setting.png">
+<P class="sign-name">Hunan WuXiaoHu Technology Co., Ltd.</P>
+<P>&gt;</P></A>         <IMG class="finger" src="image/finger.png">
+<DIV class="btn-list"><A id="btn-trust" href="https://www.imaibei.com/download/imaibei.mobileprovision">去信任</A><A 
+id="jc" href="https://www.imaibei.com/download/guide.html">详细教程&gt;</A>         
+</DIV></DIV></SECTION>
+<SCRIPT>
+    var userAgent = navigator.userAgent.toLowerCase();
+    /*滚动浮层 取消*/
+    $('#btn-cancel').click(function () {
+        $('.overlay').animate({bottom: "-900px"});
+    });
+
+    /*提示框 取消&确认*/
+    $('.btn-cancel').click(function () {
+        $('.confirmBox').css('visibility', 'hidden');
+    });
+    $('.btn-confirm').click(function () {
+        window.open("http://tui.tongbu.com/HTML/guide-tui.html");
+    });
+    /*判断是否是微博或微信*/
+    function is_weixn() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/MicroMessenger/i) == "micromessenger") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function is_weibo() {
+        var ua = navigator.userAgent.toLowerCase();
+        if (ua.match(/Weibo/i) == "weibo") {
+            return true;
+        } else {
+            return false;
+        }
+    }
+    function addClass(el, css) {
+        el.className = el.className + ' ' + css;
+    }
+    function removeClass(el, css) {
+        el.className = el.className.replace(css, '');
+    }
+    function closeCover() {
+        removeClass(document.querySelector('.popup'), 'show');
+        addClass(document.querySelector('.popup'), 'hide');
+        return false;
+    }
+
+    if (is_weixn() || is_weibo()) {
+        var tags = document.getElementsByTagName('a');
+        for (var i = 0; i < tags.length; i++) {
+            if (tags[i].className == "d d1" || tags[i].className == "d d2") {
+                tags[i].addEventListener('click', function (e) {
+                    e.preventDefault();
+                    removeClass(document.querySelector('.popup'), 'hide');
+                    addClass(document.querySelector('.popup'), 'show');
+                    return false;
+                });
+            }
+        }
+
+    }
+
+    function GetQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return unescape(r[2]);
+        return null;
+
+    }
+    var s = GetQueryString("s");
+    if (s == "www") {
+        removeClass(document.querySelector('.pc'), 'hide');
+    }
+</SCRIPT>
+ 
+<OBJECT width="0" height="0" id="b5tplugin" type="application/x-bang5taoplugin" 
+style="left: -9000px; top: -9000px; position: absolute;"></OBJECT>               
+                                                                          <!--<div class="connect">
+
+		<div class="div01">
+			
+		</div>
+</div> --> 
+</DIV></BODY></HTML>

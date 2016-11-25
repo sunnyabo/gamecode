@@ -1,0 +1,381 @@
+* {
+	-ms-word-break: break-all;
+}
+body {
+	background: rgb(235, 233, 235); margin: 0px; padding: 0px; color: rgb(116, 116, 116); font-size: 14px;
+}
+div {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+ul {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+ol {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+li {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+dl {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+dt {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+dd {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+h1 {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+h2 {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+h3 {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+h4 {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+h5 {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+h6 {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+pre {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+fieldset {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+form {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+input {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+textarea {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+p {
+	margin: 0px; padding: 0px; overflow: hidden; font-size: 14px;
+}
+ul {
+	list-style: none;
+}
+li {
+	list-style: none;
+}
+img {
+	border: 0px currentColor; border-image: none; text-decoration: none;
+}
+a img {
+	border: 0px currentColor; border-image: none; text-decoration: none;
+}
+input {
+	font: 14px/normal Verdana, Arial, Tahoma; vertical-align: middle; font-size-adjust: none; font-stretch: normal;
+}
+select {
+	font: 14px/normal Verdana, Arial, Tahoma; vertical-align: middle; font-size-adjust: none; font-stretch: normal;
+}
+button {
+	font: 14px/normal Verdana, Arial, Tahoma; vertical-align: middle; font-size-adjust: none; font-stretch: normal;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+.top {
+	width: 100%; display: block;
+}
+.logo {
+	width: 100%; display: block;
+}
+.sub {
+	background: rgb(241, 232, 174); padding: 0px 0px 10px;
+}
+.sub li {
+	margin: 10px 1.2% 0px 1.8%; width: 22%; text-align: center; float: left;
+}
+.sub li img {
+	width: 100%;
+}
+.pk {
+	
+}
+.pk img {
+	
+}
+.expert {
+	margin: 10px 0px 0px;
+}
+.expert ul li {
+	background: rgb(255, 255, 255); margin: 0px 2%; padding: 0px 0px 10px; border-radius: 3px; width: 47%; float: left;
+}
+.expert ul li.odd {
+	margin: 0px;
+}
+.expert ul li .doc {
+	margin: 10px auto; width: 92%; display: block;
+}
+.expert ul li dl {
+	margin: 0px auto; width: 92%;
+}
+.expert ul li dl dt {
+	color: rgb(138, 106, 158); font-family: 微软雅黑; font-size: 16px;
+}
+.expert ul li dl dd {
+	color: rgb(73, 73, 73); line-height: 23px; font-family: 微软雅黑; font-size: 13px;
+}
+.expert ul li div.btn {
+	margin: 5px auto 0px; width: 92%;
+}
+.expert ul li div.btn img {
+	width: 45%; float: left; display: block;
+}
+.expert ul li div.btn img.ask {
+	margin: 0px 10% 0px 0px;
+}
+.alist {
+	background: rgb(255, 255, 255); margin: 10px 0px 0px;
+}
+.alist .t {
+	background: rgb(138, 106, 158); padding: 0px 0px 0px 10px; height: 32px; color: rgb(255, 255, 255);
+}
+.alist .t li {
+	margin: 4px 0px 0px; width: 80px; height: 28px; text-align: center; line-height: 28px; font-size: 14px; float: left;
+}
+.alist .t li:hover {
+	background: rgb(255, 255, 255); color: rgb(138, 106, 158);
+}
+.alist .l {
+	margin: 10px 0px 20px;
+}
+.alist .l li {
+	background: url("dot.jpg") no-repeat 10px; height: 30px; color: rgb(83, 83, 83); line-height: 30px; text-indent: 25px; font-size: 15px;
+}
+.alist .l li a {
+	color: rgb(83, 83, 83);
+}
+.bottom {
+	margin-top: 10px; margin-bottom: 69px;
+}
+.bottom .version {
+	background: url("v_bg.jpg"); margin: 15px auto; width: 154px; height: 29px; line-height: 29px;
+}
+.bottom .version a {
+	width: 77px; height: 29px; text-align: center; color: rgb(83, 83, 83); float: left; display: block;
+}
+.bottom .l {
+	margin: 5px 0px; text-align: center; font-size: 14px;
+}
+.bottom .l a {
+	color: rgb(83, 83, 83);
+}
+.bottom .p {
+	text-align: center; color: rgb(140, 140, 140); line-height: 20px; font-size: 13px;
+}
+.ww {
+	width: 100%; bottom: 0px; position: fixed; z-index: 100; min-width: 300px; max-width: 730px;
+}
+.connect {
+	
+}
+.connect .div00 {
+	background: url("connect_bg.jpg") repeat-x; height: 44px;
+}
+.connect .w {
+	margin: 0px auto; width: 98%; max-width: 375px;
+}
+.connect .div00 .w .img00 {
+	margin-right: 32px;
+}
+.connect .div00 .w .img01 {
+	margin-right: 21px;
+}
+.connect .div01 {
+	background: rgb(62, 29, 90); height: 55px;
+}
+.connect .w img {
+	float: left; display: block;
+}
+.connect .w img.c00 {
+	width: 25%;
+}
+.connect .w img.c01 {
+	width: 25%;
+}
+.connect .w img.c02 {
+	width: 25%;
+}
+.connect .w img.c03 {
+	width: 25%;
+}
+.lanmu {
+	background: rgb(241, 232, 174); border: 1px solid rgb(207, 173, 101); border-image: none; height: 50px;
+}
+.lanmu ul {
+	margin: 0px 0px 0px 4px;
+}
+.lanmu ul li {
+	margin: 10px 0px 0px 3%; width: 16%; float: left;
+}
+.lanmu ul li a {
+	background: rgb(202, 163, 78); margin: 0px auto; width: 98%; height: 31px; text-align: center; color: rgb(89, 70, 33); line-height: 31px; font-size: 80%; font-weight: bold; display: block;
+}
+.lanmu ul li a.now {
+	background: rgb(197, 176, 131); color: rgb(255, 255, 255);
+}
+.clist {
+	background: rgb(255, 255, 255);
+}
+.clist ul li {
+	height: 90px; border-bottom-color: rgb(227, 227, 227); border-bottom-width: 1px; border-bottom-style: solid;
+}
+.clist .typename {
+	background: rgb(137, 105, 157); margin: 12px 0px 0px 1%; padding: 1%; border-radius: 5px; width: 18.1%; height: 68%; text-align: center; color: rgb(255, 255, 255); font-size: 14px; float: left;
+}
+.clist .typename a {
+	margin: 4px 0px 0px; color: rgb(255, 255, 255); line-height: 20px; display: block;
+}
+.clist li dl {
+	margin: 10px 0px 0px 2%; width: 74%; line-height: 22px; float: left;
+}
+.clist li dl dd {
+	margin: 3px 0px 0px; line-height: 18px;
+}
+.clist li dl dt a {
+	color: rgb(82, 82, 82);
+}
+.clist li dl dd a {
+	color: rgb(147, 147, 147); font-size: 13px;
+}
+.page {
+	margin: 10px 0px; text-align: center;
+}
+.article {
+	background: rgb(255, 255, 255);
+}
+.article h1 {
+	height: 50px; text-align: center; color: rgb(115, 83, 134); line-height: 60px; font-size: 18px;
+}
+.article p.date {
+	height: 15px; text-align: center; color: rgb(190, 190, 190);
+}
+.article .body {
+	padding: 2%; color: rgb(82, 82, 82); line-height: 23px;
+}
+.swiper-container {
+	width: 100%; height: 320px; text-align: center; color: rgb(255, 255, 255);
+}
+.swiper-slide {
+	width: 100%; height: 100%;
+}
+.green-slide {
+	background: rgb(73, 164, 48);
+}
+.pink-slide {
+	background: rgb(151, 62, 118);
+}
+.pagination {
+	left: 45%; bottom: 5px; position: absolute; z-index: 20;
+}
+.swiper-pagination-switch {
+	background: rgb(203, 203, 203); border-radius: 8px; border: currentColor; border-image: none; width: 8px; height: 8px; margin-right: 5px; display: inline-block; cursor: pointer; opacity: 0.8;
+}
+.swiper-visible-switch {
+	background: rgb(203, 203, 203);
+}
+.swiper-active-switch {
+	background: rgb(137, 105, 157);
+}
+.tabs {
+	background: rgb(138, 106, 158); margin: 10px 0px 0px; width: 100%;
+}
+.tabs a {
+	background: rgb(138, 106, 158); margin: 4px 0px 0px 10px; width: 80px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px; font-size: 14px; text-decoration: none; float: left; display: block;
+}
+.tabs a.active {
+	background: rgb(255, 255, 255); margin: 4px 0px 0px 10px; height: 28px; color: rgb(138, 106, 158); line-height: 28px;
+}
+.swiper-container2 {
+	background: rgb(255, 255, 255); border-width: 0px 1px 1px; border-style: none solid solid; border-color: currentColor rgb(204, 204, 204) rgb(204, 204, 204); border-radius: 0px 0px 5px 5px; border-image: none; width: 100%;
+}
+.swiper-container2 ul {
+	margin: 10px 0px 0px;
+}
+.swiper-container2 ul li a {
+	color: rgb(83, 83, 83);
+}
+.swiper-container2 ul li a:hover {
+	text-decoration: none;
+}
+.swiper-container2 ul li {
+	background: url("dot.jpg") no-repeat 10px rgba(0, 0, 0, 0); height: 30px; color: rgb(83, 83, 83); line-height: 30px; text-indent: 25px; font-size: 15px;
+}
+.swiper-container2 .swiper-wrapper {
+	height: 180px;
+}
+.swiper-container2 .swiper-slide {
+	background: none; color: rgb(255, 255, 255);
+}
+.swiper-container4 {
+	margin: 0px auto; overflow: hidden; position: relative; z-index: 1; backface-visibility: hidden; -webkit-backface-visibility: hidden; -moz-backface-visibility: hidden; -o-backface-visibility: hidden;
+}
+.swiper-container4 {
+	margin: 10px 0px; width: 100%; height: auto; text-align: center; color: rgb(255, 255, 255);
+}
+.swiper-container4 .swiper-slide {
+	width: 100%; height: 100%;
+}
+.swiper-container4 .pagination4 {
+	left: 10px; bottom: 0px; position: absolute; z-index: 20;
+}
+.swiper-container4 .swiper-pagination-switch {
+	background: rgb(34, 34, 34); border-radius: 8px; width: 8px; height: 8px; margin-right: 5px; display: inline-block; cursor: pointer; opacity: 0.8;
+}
+.swiper-container4 .swiper-visible-switch {
+	background: rgb(170, 170, 170);
+}
+.swiper-container4 .swiper-active-switch {
+	background: rgb(255, 255, 255);
+}
+.swiper-container4 .li {
+	background: rgb(255, 255, 255); margin: 0px 2%; padding: 0px 0px 10px; border-radius: 3px; width: 47%; float: left;
+}
+.swiper-container4 div.odd {
+	margin: 0px;
+}
+.swiper-container4 .li .doc {
+	margin: 10px auto; width: 92%; display: block;
+}
+.swiper-container4 .li dl {
+	margin: 0px auto; width: 92%; height: 111px;
+}
+.swiper-container4 .li dl dt {
+	color: rgb(138, 106, 158); font-family: 微软雅黑; font-size: 16px;
+}
+.swiper-container4 .li dl dd {
+	text-align: left; color: rgb(73, 73, 73); line-height: 150%; overflow: hidden; font-family: 微软雅黑; font-size: 13px;
+}
+.swiper-container4 .li div.btn {
+	margin: 5px auto 0px; width: 92%;
+}
+.swiper-container4 .li div.btn img {
+	width: 45%; float: left; display: block;
+}
+.swiper-container4 .li div.btn img.ask {
+	margin: 0px 10% 0px 0px;
+}
+#page {
+	margin: 10px 0px; text-align: center;
+}
+#page a {
+	padding: 5px 6px; border: 1px solid rgb(115, 79, 146); border-image: none; color: rgb(166, 166, 166); display: inline-block;
+}
+#page a:hover {
+	text-decoration: none;
+}

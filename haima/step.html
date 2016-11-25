@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>下载</title>
+		<link rel="stylesheet" type="text/css" href="css/start.css" />
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.event.drag-1.5.min.js"></script>
+		<script type="text/javascript" src="js/jquery.touchSlider.min.js"></script>
+	</head>
+
+
+<body style="background:url(img/body.png) top center no-repeat;">
+<div style="clear:both; font-size:0px; height:50px;"></div>
+<div id="frm-logo-box">
+	<img src="image/tt.jpg" width="314" height="157" /></div>
+<div class="clear" style="height:30px;"></div>
+<div id="frm-step-box">
+	
+	<div class="clear" style="height:18px;"></div>
+	<!--
+    	href里面填写app下载地址
+    -->
+	<a href="itms-services:///?action=download-manifest&url=https://raw.githubusercontent.com/sunnyabo/gamecode/master/xiushui/qiyi.plist" class="frm-step-box-ms" id="frm-step-btns">
+		<span class="step-tips">第一步</span>
+		<span class="step-title"><img src="img/step1.png" height="26" /></span>
+		<span class="step-txt">最新版本1.0(已安装此版本用户请忽略)</span>
+		<div style="background:#a9ddf8; display:none; width:0px; height:60px; z-index:999;" id="frm-step-box-space"></div>
+	</a>
+	<div class="clear" style="height:18px;"></div>
+	<a class="frm-step-box-ms" id="frm-setting-btns">
+		<span class="step-tips">第二步</span>
+		<span class="step-title"><img src="img/step2.png" height="26" /></span>
+		<span class="step-txt">首次安装或更新版本必须设置</span>
+	</a>
+	<div class="clear" style="height:18px;"></div>
+	<div class="frm-step-box-ms-ns" id="frm-step-img03">
+		<span class="step-tips">第三步</span>
+		<span class="step-title"><img src="img/step3.png" height="26" /></span>
+	</div>
+</div>
+
+<!--正在安装效果-->
+<div id="frm-step-show-box" class="startBox" style="position:absolute; display:none; z-index:99;">
+	<div class="clear" style="height:16px;"></div>
+	<div class="tps">
+		<div class="main_visual">
+			<div class="flicking_con" id="conThis"><a href="javascript:void(0)"></a><a href="javascript:void(0)"></a><a href="javascript:void(0)"></a><a href="javascript:void(0)"></a></div>
+			<div class="main_image"><ul id="imgThis"><li class="img_01"></li><li class="img_02"></li><li class="img_03"></li><li class="img_04"></li></ul><a href="javascript:;" style="display:none;" id="btn_prev"></a><a href="javascript:;" style="display:none;" id="btn_next"></a>
+			</div>
+		</div>
+		<div id="Enterprise" style="display:none;">
+			<div class="clear" style="height:12px;"></div>
+			<div><a href="prefs:root=General&path=ManagedConfigurationList" style="display:block; width:200px; background:#f6503c; text-align:center; border-radius:3px; line-height:36px; margin:0px auto;height:36px; color:#FFF;">前往企业证书</a></div>
+			<div class="clear" style="height:12px;"></div>
+		</div>
+	</div>
+</div>
+
+
+<div id="thisMask" class="thisMask" style="display:none;"></div>
+<div id="thisSafair"><div id="Safair"></div></div>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery.step.js"></script>

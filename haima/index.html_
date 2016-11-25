@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>首页</title>
+		<link rel="stylesheet" type="text/css" href="css/start.css" />
+		<script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="background:url(img/body.png) top center no-repeat;">
+		<div style="clear:both; font-size:0px; height:120px;"><img src="image/tt.jpg" width="291" height="169" /></div>
+		<div id="frm-logo-box"></div>
+		<div class="clear" style="height:30px; text-align:center;"></div>
+		<div class="clear" style="height:140px; text-align:center;">
+		 <DIV class="li"><IMG class="doc" src="image/android.jpg"><IMG 
+      class="doc" onClick="downandroid();" 
+src="image/anbutton.png"></DIV>
+      <DIV class="li odd"><IMG class="doc" src="image/ios.jpg"><IMG 
+      class="doc" onClick="downios();" 
+      src="image/iosbutton.png"></DIV>
+		</div>
+		<div style="text-align:center; clear:both; width:100%;">
+		<a class="frm-step-box-ms" id="frm-start-btn" href="step.html">
+			<div class="clear" style="height:18px;"></div>
+			<div style="text-align:center;"><img src="img/sbtn.png" height="26" /></div>
+		</a>
+		</div>
+		<div class="clear" style="height:20px;"></div>
+		<div style="text-align:center;">
+		<h3 style="color:#fff; font-weight:100;">是什么？</h3>
+		</div>
+		<div class="clear" style="height:20px;"></div>
+</body>
+
+</html>
+<script type="text/javascript">
+$(function(){
+	$("#frm-start-btn").click(function(){
+			var ua = navigator.userAgent.toLowerCase();  
+			if(ua.match(/MicroMessenger/i)=="micromessenger" || ua.indexOf('qq') != -1) {
+				if(document.body!=null && document.body!=undefined){
+					var strHtml = "<div style=\"width:100%; display:; height:100%; position:fixed; top:0; left:0; background:rgba(0,0,0,0.75); z-index:999;\"><div style=\"z-index:999\"><img src=\"img/zhezhaos.png\" width=\"100%\" /></div></div>";
+					$(document.body).append(strHtml);return false;
+				}
+				return false;
+			}
+	});
+});
+</script>
+
+<SCRIPT type="text/javascript">
+        var is_weixin = function () {
+            var ua = navigator.userAgent.toLowerCase();
+            if (ua.match(/MicroMessenger/i) == "micromessenger") {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function doLocation(url) {
+            var a = document.createElement("a");
+            if (!a.click) {
+                window.location = url;
+                return;
+            }
+            a.setAttribute("href", url);
+            a.style.display = "none";
+            document.body.appendChild(a);
+            a.click();
+        }
+        function downandroid() {
+            if (is_weixin()) {
+                var winHeight = typeof window.innerHeight != "undefined" ? window.innerHeight : document.documentElement.clientHeight;
+                //兼容IOS，不需要的可以去掉
+                var tip = document.getElementById("weixin-tip");
+                var close = document.getElementById("close");
+                tip.style.height = winHeight + "px";
+                //兼容IOS弹窗整屏
+                tip.style.display = "block";
+                close.onclick = function () {
+                    tip.style.display = "none";
+                }
+            } else {
+                window.location.href = "./jump.php";
+                return;
+                doLocation("./jump.php");
+            }
+        }
+
+        function downios() {
+            if (is_weixin()) {
+                var winHeight = typeof window.innerHeight != "undefined" ? window.innerHeight : document.documentElement.clientHeight;
+                //兼容IOS，不需要的可以去掉
+                var tip = document.getElementById("ios-weixin-tip");
+                var close = document.getElementById("ios-close");
+                tip.style.height = winHeight + "px";
+                //兼容IOS弹窗整屏
+                tip.style.display = "block";
+                close.onclick = function () {
+                    tip.style.display = "none";
+                }
+            } else {
+                window.location.href = "./ipa/step.html";
+                return;
+                doLocation("./ipa/step.html");
+            }
+        }
+    </SCRIPT>

@@ -1,0 +1,32 @@
+.rankbox div.box{border:#dcdcdc dashed 1px; height:70px; position:relative; margin-bottom:12px}
+.rankbox div.box div.number{ width:35px;height:35px; background:#f6503c; color:#FFF; font-weight:900; text-align:center; line-height:35px; font-size:18px; font-family:Arial, Helvetica, sans-serif; position:absolute;top:16px;left:16px;}
+.rankbox div.box div.txt{position:absolute;top:16px;right:8px;width:75%;}
+.rankbox div.box div.txt div.strname{ position:absolute;top:0px;left:0px; width:120px; font-weight:500;color:#6c6c6c;}
+.rankbox div.box div.txt div.strname font.rxnka{color:#e62f19; font-family:Arial, Helvetica, sans-serif; font-weight:900;}
+.rankbox div.box div.txt div.tips{position:absolute;right:0px;top:3px;color:#cacaca; width:200px; text-align:right; font-size:13px;}
+.rankbox div.box div.txt div.tips font.nnu{color:#e62f19}
+.rankbox div.box div.txt div.yaoqiu{ position:absolute;left:0px;top:26px; font-size:10px; color:#adadad}
+
+.rankbox div.current{border:#dcdcdc dashed 1px; height:70px; position:relative;; margin-bottom:12px}
+.rankbox div.current div.number{ width:35px;height:35px; background:#f6503c; color:#FFF; font-weight:900; text-align:center; line-height:35px; font-size:18px; font-family:Arial, Helvetica, sans-serif; position:absolute;top:16px;left:16px;}
+.rankbox div.current div.txt{position:absolute;top:16px;right:8px;width:75%;}
+.rankbox div.current div.txt div.strname{ position:absolute;top:22px;left:0px; width:120px; font-weight:500;color:#6c6c6c;}
+.rankbox div.current div.txt div.strname font.rxnka{color:#e62f19; font-family:Arial, Helvetica, sans-serif; font-weight:900;}
+.rankbox div.current div.txt div.tips{position:absolute;right:8px;top:25px;color:#cacaca; width:200px; text-align:right; font-size:13px;}
+.rankbox div.current div.txt div.tips font.nnu{color:#e62f19}
+.rankbox div.current div.txt div.cur{position:absolute;left:0px;top:0px; width:100%; font-size:14px; color:#adadad}
+/************************************************************************************
+'当前等级
+'************************************************************************************/
+.rankbox div.box2{border:#dcdcdc dashed 1px; height:70px; position:relative;; margin-bottom:12px}
+.rankbox div.box2 div.number{ width:35px;height:35px; background:#f6503c; color:#FFF; font-weight:900; text-align:center; line-height:35px; font-size:18px; font-family:Arial, Helvetica, sans-serif; position:absolute;top:16px;left:16px;}
+.rankbox div.box2 div.txt{position:absolute;top:8px;right:8px;width:75%;}
+.rankbox div.box2 div.txt div.strname{ position:absolute;top:0px;left:0px; width:120px; font-weight:500;color:#6c6c6c;}
+.rankbox div.box2 div.txt div.strname font.rxnka{color:#e62f19; font-family:Arial, Helvetica, sans-serif; font-weight:900;}
+.rankbox div.box2 div.txt div.tips{position:absolute;right:8px;top:3px;color:#cacaca; width:200px; text-align:right; font-size:13px;}
+.rankbox div.box2 div.txt div.tips font.nnu{color:#e62f19}
+.rankbox div.box2 div.txt div.yaoqiu{position:absolute;left:0px;top:22px; width:100%; font-size:10px; color:#adadad}
+.rankbox div.box2 div.txt div.yaoqiu div.outbox{ width:60%; background:#c6c6c6; height:14px; font-size:14px; position:absolute;left:90px;top:0px; text-align:center; color:#FFF; text-align:right;}
+.rankbox div.box2 div.txt div.yaoqiu div.inbox{ position:absolute;left:0px;top:0px;height:14px; font-size:14px; background:#f6503c; width:50%;}
+.rankbox div.box2 div.txt div.yaoqiu div.txts{ position:absolute;top:0px;left:90px;color:#FFF; width:60%; text-align:center;}
+.mores{ width:100%; background:#dcdcdc; color:#999999; display:block; padding:15px 0px; text-align:center;}
